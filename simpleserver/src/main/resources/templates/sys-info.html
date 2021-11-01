@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Your System Information</title>
+</head>
+<body>
+This page was generated at <strong  th:text="${milli}"></strong>
+<table>
+    <th>JVM Key</th>
+    <th>JVM Property</th>
+    <tr th:each="element : ${jvm_env}">
+        <td th:text="${element.key}">keyvalue</td>
+        <td th:text="${element.value.toString}">num</td>
+    </tr>
+</table>
+</body>
+</html>

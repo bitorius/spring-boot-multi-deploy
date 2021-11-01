@@ -1,0 +1,9 @@
+plugins {
+	id 'war'
+}
+
+dependencies {
+	implementation project(':demo-core')
+
+	implementation 'org.webjars:webjars-locator-jboss-vfs:0.1.0'
+}
